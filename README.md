@@ -16,7 +16,7 @@ The tool performs real-time information search using Serper (Google Search API),
 The result is a reliable, noise-free information provider for agent workflows.
 
 
-```
+
 
 ✨ Features
 🔹 1. Three curated “knowledge libraries”
@@ -86,16 +86,19 @@ call get_docs
 And receive a clean, reliable information summary.
 
 📦 Installation
+
+```
 1. Clone the repository
-git clone <your-repo-url>
+git clone <repo-url>
 cd <your-repo-folder>
+```
 
 2. Install dependencies
 
 Using pip:
-
+```
 pip install -r requirements.txt
-
+```
 
 Required packages:
 
@@ -105,11 +108,11 @@ httpx
 beautifulsoup4
 
 3. Add your Serper API key
-
+```
 Create a .env file:
 
 SERPER_API_KEY=your_api_key_here
-
+```
 
 Sign up for a free key at:
 https://serper.dev
@@ -117,14 +120,14 @@ https://serper.dev
 🚀 Running the MCP Server
 
 Run the server using Python:
-
+```
 python main.py
-
+```
 
 You should see:
-
+```
 Starting MCP docs server on stdio...
-
+```
 
 The server will now communicate over STDIO (required for Claude Desktop).
 
@@ -133,13 +136,15 @@ The server will now communicate over STDIO (required for Claude Desktop).
 🧩 Claude Desktop Integration
 
 Open your Claude Desktop configuration file:
-
+```
 macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
-
+```
+```
 Windows: %APPDATA%\Claude\claude_desktop_config.json
+```
 
 Add:
-
+```
 {
   "mcpServers": {
     "info-search": {
@@ -151,6 +156,7 @@ Add:
     }
   }
 }
-
+```
 
 Restart Claude Desktop.
+
