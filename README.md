@@ -33,7 +33,6 @@ The tool does:
 
 site:<domain> <query>
 
-
 ensuring results come specifically from the selected library’s domain.
 
 🔹 3. JS/Cookie wall & redirect protection
@@ -159,4 +158,5 @@ Add:
 ```
 
 Restart Claude Desktop.
+
 
